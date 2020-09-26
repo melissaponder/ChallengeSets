@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengeSets
 {
@@ -19,7 +20,11 @@ namespace ChallengeSets
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            throw new NotImplementedException();
+            if (vals.Count() % 2 == 0)
+            {
+                return true;
+            }
+            else return false; 
         }
 
         public bool IsNumberEven(int number)
